@@ -21,6 +21,9 @@ h2{
   text-align: center;
   font-family: serif;
 }
+#about h2{
+  text-align: center;
+}
 section{
   width:100%;
   padding: 5% 0;
@@ -90,7 +93,9 @@ nav div img{
   margin:0;
   width:100%;
 }
-
+#about h2{
+  text-align: center;
+}
 /*Destination Section Styles */
 #destination{
   background-color:dodgerblue;
@@ -138,12 +143,21 @@ label{
 .socialNav a i:hover{
   color:limegreen;
 }
+.rw1{
+  text-align:justify;
+  padding-left: 30%;
+}
 /*RESPONSIVE STYLES*/
-@media all and (max-width:940px){
+@media all and (max-width:500px){
   .mob-show{
     display:block;
   }
   .mob-hide{
     display:none;
   }
+  #des{
+    width: 100vw;
+    text-align: center;
+  }
+
 }
