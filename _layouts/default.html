@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
+      <!-- link to font -->
+      <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+      <!-- link to stylesheet for css -->
+      <link rel="stylesheet" href="styles/main.css">
+      <title>{{page.title}}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://use.fontawesome.com/50da389f14.js"></script>
+</head>
+<body>
+  <header id="home">
+    <!-- mobile responsive navigation-->
+    <div id="container" class="grid mob-show">
+
+    <div class="col-6">
+
+    </div>
+    <div class="col-6">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#about" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#destination" class="toggle-mobile-menu">Destination</a>
+      <a class="col-12 center" href="#video" class="toggle-mobile-menu">Video</a>
+      <a class="col-12 center" href="#contact" class="toggle-mobile-menu">Contact</a>
+  </nav>
+
+</div> <!-- #container -->
+
+    <!-- mobile responsive navigation ends here -->
+    <nav class="grid-spaceBetween mob-hide">
+        <div class="col-28_sm-11_xs-12">
+          <img src="Images/logo.jpg" alt="image of rwandan " width="200" height="100"/>
+        </div>
+        <div class="col-48_sm-11_xs-12 grid-spaceAround">
+               <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#destination">Destination</a>
+                <a href="#video">Video</a>
+                <a href="#contact">Contact</a>
+              </div>
+          </nav>
+              <h1> Rwanda, The Land Of A Thousand Hills</h1>
+    </header>
+    {{content}}
+    <footer id="contact">
+      <h2>Contact Me</h2>
+          <form method="POST" class="grid-center" action="http://formspree.io/biclear05@yahoo.fr">
+            <label class="col-7">Your Name</label>
+            <input type="name" class="col-7" name="name"/>
+            <label class="col-7">Your Email</label>
+            <input type="email" class="col-7" name="email"/>
+            <label class="col-7">Your Message</label>
+            <textarea name="message" class="col-7"></textarea>
+            <button class="col-7 sendButton" type="submit">Send</button>
+        </form>
+        <nav class="grid-center socialNav">
+          <a class="col-1" href="https://www.facebook.com/profile.php?id=1739085826"><i class="fa fa-facebook-square" aria-hidden="true" id="icon"></i></a>
+          <a class="col-1" href="https://www.instagram.com/cbenemariya/"><i class="fa fa-instagram" aria-hidden="true" id="inst"></i></a>
+        </nav>
+    </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="/javascript/scripts.js"></script>
+    </body>
+    </html>
